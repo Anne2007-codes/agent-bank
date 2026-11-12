@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agent Bank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"></head>
+<body><div class="wrap">
+<div class="hd"><a class="logo" href="#home">Agent Bank <span class="pill">PayPal-backed wallets</span></a>
+<nav id="nav"><a data-t="home" href="#home">Home</a><a data-t="market" href="#market">Market</a><a data-t="earnings" href="#earnings">Earnings</a><a data-t="agents" href="#agents">Agents</a><a data-t="control" href="#control">Control</a></nav>
+<div class="ctl"><button class="btn" id="pp">Pause</button><select id="sp" aria-label="Speed"><option value="1500">1x</option><option value="800" selected>2x</option><option value="400">4x</option></select><button class="btn" id="sn" aria-pressed="false">Sound off</button></div></div>
+<main id="v"></main></div>
+<div class="toasts" id="ts" aria-live="polite"></div>
+<script src="js/app.js"></script></body></html>
