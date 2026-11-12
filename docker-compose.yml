@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:16
+    environment: {POSTGRES_USER: agentbank, POSTGRES_PASSWORD: agentbank, POSTGRES_DB: agentbank}
+    ports: ["5432:5432"]
+  api:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://agentbank:agentbank@db:5432/agentbank
+    ports: ["8000:8000"]
+    depends_on: [db]
